@@ -6,7 +6,6 @@
   /* цвет фона */
   --primary-background: #e5e5e5;
   --sekondary-background: #2f303a;
-  
 }
 *,
 *::before,
@@ -100,7 +99,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  transition-property: color,transform;
+  transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -169,22 +168,19 @@ img {
   color: #2196f3;
 }
 /* underline */
-.portfolio{
+.portfolio {
   position: relative;
 }
-.portfolio::after{
+.portfolio::after {
   content: "";
   position: absolute;
   right: 0%;
   bottom: 0%;
   width: 78px;
   height: 4px;
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 2px;
 }
-
-
-
 
 /* main section  */
 .main {
@@ -210,15 +206,15 @@ img {
 .button-li + .button-li {
   margin-left: 8px;
 }
-.button-hero{
+.button-hero {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
   border-radius: 4px;
   border: 0px;
-  background: #F5F4FA;
-  transition-property: background-color, transform;
+  background: #f5f4fa;
+  transition-property: background-color, color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-family: Roboto;
@@ -228,14 +224,8 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: #212121;
-  
- 
-  transition-property: color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-  
-  
+
 .maine-section-portfolio li {
   list-style: none;
 }
@@ -449,8 +439,60 @@ img {
 }
 .footer-link:hover {
   background-color: #2196f3;
-   
 }
 .footer-link:focus {
   background-color: #2196f3;
+}
+.conteiner-footer-form {
+  margin-left: 93px;
+  padding-top: 72px;
+  padding-bottom: 94px;
+}
+.footer-form {
+  display: flex;
+}
+
+.footer-form input {
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer-form button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 28px;
+
+  align-items: center;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+}
+
+.airplaine-svg {
+  width: 24px;
+  height: 24px;
+}
+.span-button {
+  margin-right: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
 }
