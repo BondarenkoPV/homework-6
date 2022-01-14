@@ -69,10 +69,35 @@
              <!-- модалка -->
              <div class="backdrop is-hidden"  data-modal>
                  <div class="modal" >
-                     <button  data-modal-close class="button-close" type="button">
-                      
-                     </button  >
-                 </div>
+                     <button  data-modal-close class="button-close" type="button"></button  >
+                
+                       
+                            <h3 class="text-title-form">Оставьте свои данные, мы вам перезвоним</h3>
+                            <form class="form">
+                            <div class="box-form">
+                                <label class="" for="neme">Имя</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="box-form">
+                                <label for="tel">Телефон</label>
+                                <input type="tel" name="tel" id="tel"> 
+                            </div>
+                            <div class="box-form">
+                                <label for="mail">Почта</label>
+                                <input type="email" name="mail" id="mail">
+                            </div>
+                            <div class="box-form">
+                                <label for="coment">Коментарий</label>
+                                <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                            </div>
+                            <div class="box-form">
+                                <input type="checkbox" name="mark" id="mark">
+                                <label for="mark">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                                
+                            </div>
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
              </div >
         <!--Секция 2-->
         <section class="section-description">
@@ -372,6 +397,15 @@
                         </svg></a>
                 </li>
             </ul>
+        </div>
+        <div class="conteiner-footer-form">
+            <h3 class="heading-footer">Подпишитесь на рассылку</h3>
+            <form class="footer-form">
+              <label for="mail"></label>
+                <input type="email" name="mail" id="mail" placeholder="E-mail"/>
+                <button type="submit">Подписаться</button>
+            </form>
+
         </div>
     </div>
 </footer>

@@ -170,20 +170,20 @@ img {
   color: #2196f3;
 }
 /* underline */
-.studio{
+.studio {
   position: relative;
 }
 
 .studio::after {
-  content:"";
+  content: "";
   position: absolute;
   right: 0%;
   bottom: -2px;
- 
- width: 48px;
- height: 4px;
- border-radius: 2px;
- background-color:#2196f3 ;
+
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
 }
 
 /* Секция герой */
@@ -249,49 +249,92 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  
 }
 .backdrop.is-hidden {
-  
   opacity: 0%;
   visibility: hidden;
   pointer-events: none;
 }
 .modal {
   position: absolute;
-  
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  padding: 15px;
- background-color: #ffffff;
+  padding: 40px;
+  background-color: #ffffff;
 }
 
-
-.button-close{
+.button-close {
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  
-  background: #FFFFFF;
+
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   padding: 15px;
-background-image: url(./img/x.svg);
-fill: black;
+  background-image: url(./img/x.svg);
+  fill: black;
 
-background-repeat: no-repeat;
-background-position: 50% 50%;
-background-size: 11px 11px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 11px 11px;
 }
+/*  Форма */
+.box-form {
+  display: flex;
+  flex-direction: column;
+}
+.box-form label {
+  margin-top: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
 
- 
+  color: #757575;
+}
+.box-form ::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+  padding-right: 55px;
 
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: 0px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* секция 2 */
 .section-description {
@@ -382,31 +425,31 @@ background-size: 11px 11px;
 .ul-our-work-section :nth-child(3) {
   margin-right: 0px;
 }
-     /* линия с текстом  */
-     .box-work-section{
-      position: relative;
-     }
-     .conteiner-for-text{
-      position: absolute;
-      left: 0%;
-      right: 0%;
-      bottom: 0%;
-      background: rgba(47, 48, 58, 0.8);
-      padding-top: 27px;
-      padding-bottom: 27px;
-     }
+/* линия с текстом  */
+.box-work-section {
+  position: relative;
+}
+.conteiner-for-text {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
 
-
-     .text-work-section{
-      font-family: Roboto;
-       font-style: normal;
-       font-weight: bold;
-       font-size: 14px;
-       line-height: 16px;
-       text-align: center; 
-       letter-spacing: 0.03em;
-       text-transform: uppercase;
-       color: #FFFFFF;}
+.text-work-section {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 
 /* секция 4 */
 .section-command {
@@ -671,4 +714,29 @@ background-size: 11px 11px;
 }
 .footer-link:focus {
   background-color: #2196f3;
+}
+
+.conteiner-footer-form {
+  margin-left: 93px;
+  padding-top: 72px;
+  padding-bottom: 94px;
+}
+
+.footer-form input {
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer-form button {
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
 }
