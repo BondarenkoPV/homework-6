@@ -250,6 +250,8 @@ img {
 }
 .conteiner-description {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -363,6 +365,8 @@ img {
 }
 .conteiner-section-command {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -473,9 +477,12 @@ img {
   display: flex;
   list-style: none;
 }
-.regular-cliets > .conteiner-our-work-section {
+.conteiner-our-work-section {
+  width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .clients-li + .clients-li {
@@ -516,6 +523,8 @@ img {
 }
 .conteiner-footer {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -742,7 +751,28 @@ img {
 
   color: #757575;
 }
-.mail-input .mail-black-svg .tel-input . tel-old-svg .box-form ::placeholder {
+.mail-input {
+  position: relative;
+}
+.mail-black-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 12px;
+}
+.tel-input {
+  position: relative;
+}
+.tel-old-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 12px;
+}
+
+.box-form ::placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
