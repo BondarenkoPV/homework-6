@@ -724,6 +724,7 @@ img {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  color: #212121;
   padding: 15px;
 }
 .modal-button-svg {
@@ -734,11 +735,67 @@ img {
   transform: translate(-50%, -50%);
   width: 11px;
   height: 11px;
+  fill: currentColor;
 }
+.button-close:hover,
+.button-close:focus {
+  color: #2196f3;
+}
+
 /*  Форма */
+.text-title-form {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
 .box-form {
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+.icon {
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+  display: inline-block;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  color: #212121;
+}
+.box-form input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.box-form textarea {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.box-form:focus-within > .icon svg {
+  color: #2196f3;
 }
 .box-form label {
   margin-top: 12px;
@@ -748,28 +805,7 @@ img {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-
   color: #757575;
-}
-.mail-input {
-  position: relative;
-}
-.mail-black-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 13px;
-  height: 12px;
-}
-.tel-input {
-  position: relative;
-}
-.tel-old-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 13px;
-  height: 12px;
 }
 
 .box-form ::placeholder {
@@ -801,9 +837,9 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   border: 0px;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
 }
 
 .box-modal-checkbox {
@@ -826,4 +862,8 @@ img {
 .text-blue {
   color: #2196f3;
   text-decoration: underline;
+}
+.check-mark-svg {
+  width: 16px;
+  height: 15px;
 }
