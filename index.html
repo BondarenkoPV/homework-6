@@ -370,7 +370,7 @@
             <h3 class="heading-footer">Подпишитесь на рассылку</h3>
             <form class="footer-form">
               <label for="e-mail"></label>
-                <input type="email" name="mail" id="e-mail" placeholder="E-mail"/>
+                <input class="footer-form-input" type="email" name="mail" id="e-mail" placeholder="E-mail"/>
                 <button type="submit"><span class="span-button"> Подписаться </span>
                     <svg class="airplaine-svg">
                         <use href="./img/new.svg#icon-airplaine"></use>
@@ -399,52 +399,42 @@
                 <span class="icon"> <svg>
                         <use href="./img/new.svg#icon-person"></use>
                     </svg></span>
-                <label for="name" class="form-label"><span>Имя </span>
-                    
-                </label>
-              
+                <label  for="name" class="form-label"><span>Имя </span></label>
                 <input class="form-input" type="text" name="name" id="name" placeholder=" ">
-                
-                
             </div>
             
             
             <div class="box-form">
-               <span class="icon">
-                <svg>
-                    <use href="./img/new.svg#icon-phone-old"></use>
-                </svg></span>
-                <label for="tel"><span> Телефон</span></label>
-                <input type="tel" name="tel" id="tel" placeholder=" ">
+              
+                <label class="form-label" for="tel"><span> Телефон</span></label>
+                <span class="icon">
+                    <svg>
+                        <use href="./img/new.svg#icon-phone-old"></use>
+                    </svg></span>
+                <input class="form-input" type="tel" name="tel" id="tel" placeholder=" ">
             </div>
            
             <div class="box-form">
             <span class="icon"> <svg>
                     <use href="./img/new.svg#icon-email-black"></use>
                 </svg></span>
-                <label for="mail">
-                   <span>Почта</span>
-                  
-
-                </label>
-                <input type="email" name="mail" id="mail" placeholder=" ">
-                
-                
-                
+                <label class="form-label" for="mail"><span>Почта</span></label>
+                <input class="form-input" type="email" name="mail" id="mail" placeholder=" ">
             </div>
+
+
             <div class="box-form">
-                <label for="coment">Коментарий</label>
+                <label class="form-label" for="coment">Коментарий</label>
                 <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введите текст"></textarea>
             </div>
+
+
             <div class="box-modal-checkbox">
                     <label class="label-checkbox" >
                 <input class="checkbox" type="checkbox" name="mark"  placeholder=" " >
-                <span class="icon-check"></span><span> Соглашаюсь с рассылкой и принимаю</span> <span class="text-blue"> Условия
-                    договора</span>
-                
-                       </label>
-
+                <span class="icon-check"></span><span> Соглашаюсь с рассылкой и принимаю</span> <span class="text-blue"> Условия договора</span></label>
             </div>
+            
             <button type="submit">Отправить</button>
         </form>
     </div>

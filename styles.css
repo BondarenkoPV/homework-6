@@ -648,6 +648,18 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.footer-form-input ::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-form button {
   display: flex;
   align-items: center;
@@ -729,6 +741,7 @@ img {
   transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .modal-button-svg {
   position: absolute;
@@ -764,9 +777,11 @@ img {
 }
 .icon {
   position: absolute;
-  bottom: 8px;
+  top: 50%;
+  transform: translatey(+12%);
   left: 15px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .icon svg {
@@ -778,13 +793,14 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.box-form input {
+.form-input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+  cursor: pointer;
 }
 
 .box-form textarea {
@@ -803,8 +819,9 @@ img {
 .box-form:focus-within > .icon svg {
   color: #2196f3;
 }
-.box-form label {
+.form-label {
   margin-top: 12px;
+  margin-bottom: 4px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -892,4 +909,5 @@ img {
   background-image: url(./img/check.svg);
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }

@@ -224,6 +224,7 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: #212121;
+  cursor: pointer;
 }
 
 .maine-section-portfolio li {
@@ -465,6 +466,17 @@ img {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.footer-form-input ::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-form button {
   display: flex;
